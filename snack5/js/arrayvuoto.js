@@ -14,7 +14,7 @@ function checkOdd(numero) {
     if (numero % 2 == 1) {
         return numero
     } else {
-        console.log('il numero è pari');
+        return 'il numero è pari';
     }
 }
 
