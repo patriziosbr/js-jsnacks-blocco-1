@@ -36,8 +36,3 @@ for (var y = 0; y < 10; y++) {
     document.getElementById("nomi_e_cognomi").innerHTML += '<li>'  + nomeCognomeRandom + '</li>';
     // console.log(nomeCognomeRandom);
 }
-
-// var arrInvitati = [];
-// arrInvitati.push(nomeCognomeRandom);
-// console.log(arrInvitati);
-
