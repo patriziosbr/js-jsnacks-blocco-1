@@ -31,10 +31,19 @@ var cognomeRandom = arrCognomi[Math.floor(Math.random() * arrCognomi.length)];
 console.log('cognome random: ' + cognomeRandom);
 
 function nomiCognomi(nome, cognome) {
-    
+    for (var z = 0; z < 10; z++) {
         var invitato = "";
         invitato +=  nome + cognome;
-        return invitato
-    
+        return invitato;
+    }
 }
-console.log(nomiCognomi(nomeRandom, cognomeRandom));
+
+
+console.log('funzione concat: ' + nomiCognomi(nomeRandom, cognomeRandom));
+
+
+for (var y = 0; y < 10; y++) {
+    var invitatoTemp = "";
+    invitatoTemp += nomiCognomi(nomeRandom, cognomeRandom);
+    console.log('ciclo for esterno x10: ' + invitatoTemp);
+}
