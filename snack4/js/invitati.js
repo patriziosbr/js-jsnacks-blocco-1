@@ -3,20 +3,38 @@
 
 
 
-var arrNomi = ["paolo", "mario", "alessio", "giovanni", "maria"];
+var arrNomi = ["paolo ", "mario ", "alessio ", "giovanni ", "maria "];
+// console.log(arrNomi);
 var arrCognomi = ["rossi", "verdi", "bianchi", "biase", "conte"];
-
+// console.log(arrCognomi);
 
 // document.getElementById('nomi').innerHTML = '<li>'  + arrNomi + '</li>';
 
 for (var i = 0; i < arrNomi.length; i++) {
     var nomiTempo = arrNomi[i];
     document.getElementById("nomi").innerHTML += '<li>'  + arrNomi[i] + '</li>';
+    var nomiArrFor = arrNomi[i];
+    console.log(nomiArrFor);
 }
 
-for (var i = 0; i < arrCognomi.length; i++) {
-    var nomiTempo = arrCognomi[i];
-    document.getElementById("cognomi").innerHTML += '<li>'  + arrCognomi[i] + '</li>';
+for (var x = 0; x < arrCognomi.length; x++) {
+    var nomiTempo = arrCognomi[x];
+    document.getElementById("cognomi").innerHTML += '<li>'  + arrCognomi[x] + '</li>';
+    var cognomiArrFor = arrCognomi[x];
+    console.log(cognomiArrFor);
 }
 
+var nomeRandom = arrNomi[Math.floor(Math.random() * arrNomi.length)];
+console.log('nome random: ' + nomeRandom);
 
+var cognomeRandom = arrCognomi[Math.floor(Math.random() * arrCognomi.length)];
+console.log('cognome random: ' + cognomeRandom);
+
+function nomiCognomi(nome, cognome) {
+    
+        var invitato = "";
+        invitato +=  nome + cognome;
+        return invitato
+    
+}
+console.log(nomiCognomi(nomeRandom, cognomeRandom));
